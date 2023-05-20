@@ -40,6 +40,14 @@ Within the dataset, the "review" feature is likely to be NMAR. Each "review" dat
 
 ### Missingness Dependency
 
+<iframe src="assets/missing_minutes.html" width=700 height=600 frameBorder=0></iframe>
+The missingness of the "description" column is NOT dependent on the "minutes" column. Our permutation test calculated a p-value of 0.426, and using a significance level of 0.05, we can determine that the "description" column is MCAR on the minutes column.
+
+
+<iframe src="assets/missing_rating.html" width=700 height=600 frameBorder=0></iframe>
+The missingness of the "description" column IS dependent on the "rating" column.
+Our permutation test calculated a p-value of 0.016, and using a significance level of 0.05, we can determine that the "description" column is MAR on the rating column.
+
 ## Hypothesis Testing
 * Null Hypothesis: In the population, the average rating of recipes labeled “healthy” and  recipes not labeled “healthy” have the same distribution – the lower average rating of recipes with the “healthy” tag is due to chance alone.
 In other words, if we picked 16024 reviews randomly from the population, it is reasonable to see an average this low.
