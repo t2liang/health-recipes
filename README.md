@@ -1,8 +1,6 @@
 # How Do "Healthy" Recipes Compare to "Unhealthy" Ones, According to Reviewers
 UCSD data science DSC80 course analysis project.
 ---
-layout: page
-title: Project 3
 
 ---
 ## Introduction
@@ -77,9 +75,7 @@ Our permutation test calculated a p-value of 0.016, and using a significance lev
 ## Hypothesis Testing
 * Null Hypothesis: In the population, the average rating of recipes labeled “healthy” and  recipes not labeled “healthy” have the same distribution – the lower average rating of recipes with the “healthy” tag is due to chance alone.
 
-We compare two samples:
-    - Average rating of “healthy” recipes
-    - Average rating of non “healthy” recipes
+We compare two samples: average rating of “healthy” recipes, and average rating of non “healthy” recipes
 
 
 * Alternative Hypothesis: In the population, recipes labeled “healthy” have a lower average rating than recipes not labeled “healthy” – the lower average rating of recipes with the “healthy” tag is not due to chance alone.
