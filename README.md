@@ -12,7 +12,7 @@ To answer this question, we use data coming directly from food.com, containing a
 
 ## Cleaning and EDA
 
-## Data Cleaning 
+### Data Cleaning 
 
 
 |    | name                                 |     id |   minutes |   contributor_id | submitted   | tags                                                                                                                                                                                                                        | nutrition                                    |   n_steps | steps                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | description                                                                                                                                                                                                                                                                                                                                                                       | ingredients                                                                                                                                                                    |   n_ingredients |          user_id |   recipe_id | date       |   rating | review                                                                                                                                                                                                                                                                                                                                           |   avg |   calories |   total fat |   sugar |   sodium |   protein |   saturated fat |   carbohydrates |
@@ -40,17 +40,20 @@ To answer this question, we use data coming directly from food.com, containing a
 
 ### Univariate Analysis
 
-<iframe src="assets/histplot.html" width=700 height=600 frameBorder=0></iframe>
+<iframe src="assets/histplot2.html" width=700 height=600 frameBorder=0></iframe>
 The above graph depicts the distribution of the values of 'total fat' for every recipe in the dataset. Visually, it follows that a large majority of data within the dataset are on recipes with low calorie values. 
 
 ### Bivariate Analysis
 
-<iframe src="assets/scatter.html" width=700 height=600 frameBorder=0></iframe>
+<iframe src="assets/scatter2.html" width=700 height=600 frameBorder=0></iframe>
 The above graph depicts association between 'rating' and 'calories'. Looking at the data, we can infer based off of outlier points that recipes with calorie value higher than average are corelated with higher rating.
 
 ### Interesting Aggregates
 
-| healthy   |     1.0 |     2.0 |     3.0 |     4.0 |     5.0 |\n|:----------|--------:|--------:|--------:|--------:|--------:|\n| False     | 43.2865 | 38.5983 | 36.5854 | 34.6861 | 36.5394 |\n| True      | 12.6695 | 12.094  | 12.1776 | 12.7224 | 12.579  |
+| healthy   |     1.0 |     2.0 |     3.0 |     4.0 |     5.0 |
+|:----------|--------:|--------:|--------:|--------:|--------:|
+| False     | 43.2865 | 38.5983 | 36.5854 | 34.6861 | 36.5394 |
+| True      | 12.6695 | 12.094  | 12.1776 | 12.7224 | 12.579  |
 
 The above table uses the 'healthy' column as its index, 'rating' as its columns, and 'total fat' as its values. Visually, the table conveys that the recipes with the 'healthy' tag indeed contains significantly less fat content than those without the tag.
 
